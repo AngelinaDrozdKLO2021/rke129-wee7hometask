@@ -15,7 +15,15 @@
     
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .header h1 {
+    
     text-transform: uppercase;
 }
 
@@ -227,13 +235,13 @@
     }
     .navigation ul li {
         border-color: rgb(115, 255, 0);
-        display: inline-block;
-        width: 16rem;
+        display: block;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
     }
-    
     .navigation ul li:not(:last-child) {
-        border-bottom: 1px solid black;
-        margin-right: 4rem;
+        border-bottom: none;
     }
 
     .main-container {
